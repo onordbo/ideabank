@@ -5,26 +5,30 @@ $semibold = proxima_novasemibold, Helvetica Neue, Helvetica, Arial, sans-serif
 $paragraph = proxima_nova_rgregular, Helvetica Neue, Helvetica, Arial, sans-serif
 
 /* ===================== Global start ====================== */
+a:hover
+  text-decoration none
+  color #ffffff
 
 body
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
-  animation: fade 1s ease-in-out
+  animation fade 1s ease-in-out
 
 .logo
   margin-top 60px
   margin-bottom 60px
+  animation moveDown 0.5s ease-in-out
 
 .wrapper
-  width 960px
+  max-width 960px
   margin 0 auto
 
 
-/* ===================== Global end ====================== */
+/* ==================== Global end ===================== */
 
 
 
-/* ===================== Index start ====================== */
+/* ==================== Index start ===================== */
 
 .video
   margin-top 30px
@@ -125,8 +129,28 @@ body
   0%   { opacity: 0; }
   100% { opacity: 1; }
 
+@keyframes moveDown
+  0%   { transform: translateY(-10px); }
+  100% { transform: translateY(0);     }
+
+
 /* ===================== Idea end ====================== */
 
+/* ===================== About start ====================== */
+
+.people
+  margin-bottom 40px
+  img
+    max-width 160px
+    margin-left 5px
+    margin-right 5px
+    border-radius 50%
+    border 1px solid #f2f2f2
+  p
+    font-family $semibold
+
+
+/* ===================== About end ====================== */
 
 
 /* ===================== Footer start ====================== */
